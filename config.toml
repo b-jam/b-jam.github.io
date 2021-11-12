@@ -1,0 +1,4 @@
+baseURL = 'https://wattie.dev/'
+languageCode = 'en-NZ'
+title = 'Jam'
+theme = "color-your-world"
