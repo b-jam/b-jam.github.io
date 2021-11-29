@@ -4,6 +4,7 @@ title = 'Jam'
 theme = "no-js"
 enableEmoji = true
 copyright = "Copyright ©2021-, Jam Wattie; All rights reserved."
+custom_css = ["css/my.css"]
 
 [server]
 [[server.headers]]
