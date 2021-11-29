@@ -24,35 +24,8 @@ custom_css = ["css/my.css"]
   # Author
   author      = "Jam"
   authorDesc  = "Jamjamjam"
-
-  # Footer text
-  # Each value will become a paragraph
-  # Keep it as an array
-  footerText = [ "No javascript, no worries." ]
-
-  # Site cover, for Open Graph, Twitter Cards and Schema.org
-  # It will be used if the current page doesn't have an image cover
-  # File will be picked from the "assets" directory
-  # Comment the lines if you don't want to use it
-#  cover     = "img/cover.jpg"
-#  coverAlt  = "A placeholder that doesn't deserve to be described."
-
-  # Shows a message in the footer about JavaScript being disabled
-  # The default is false
-  #hasNoscriptNotice = false
-
-  # Default path for images in posts
-  # ie.: "content/some-post/img"
-  # Can also be set PER PAGE
-  # It can be used to reduce repetition
-  # There's no default value
   imgPath = "img"
 
-  # Default classes for markup image
-  # Modifies the default behavior of images placed via markdown
-  # Can also be set PER PAGE via front matter
-  # Available classes are: border and borderless
-  # There's no default value
   markupImgClass = "borderless"
 
   # This will append a separator (of your choice) along the site title to your <title>
