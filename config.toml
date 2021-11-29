@@ -8,7 +8,7 @@ custom_css = ["css/my.css"]
 
 [server]
 [[server.headers]]
-  for = '/**.html'
+  for = '/**'
   [server.headers.values]
     Cache-Control = 'public, max-age=86400'
     Content-Security-Policy = 'script-src self'
