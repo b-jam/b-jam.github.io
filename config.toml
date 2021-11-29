@@ -3,30 +3,30 @@ languageCode = 'en-NZ'
 title = 'Jam'
 theme = "no-js"
 enableEmoji = true
-copyright = "Copyright ©2021-, Benjamin Wattie; All rights reserved."
+copyright = "Copyright ©2021-, Jam Wattie; All rights reserved."
 
 [params]
   description = "Dev. Musician. Father"
 
   # Author
-  author      = "John Doe"
-  authorDesc  = "Some indescribable horror."
+  author      = "Jam"
+  authorDesc  = "Jamjamjam"
 
   # Footer text
   # Each value will become a paragraph
   # Keep it as an array
-  footerText = [ "Generated with [Hugo](https://gohugo.io) using the [Color Your World](https://gitlab.com/rmaguiar/hugo-theme-color-your-world) theme." ]
+  footerText = [ "No javascript, no worries." ]
 
   # Site cover, for Open Graph, Twitter Cards and Schema.org
   # It will be used if the current page doesn't have an image cover
   # File will be picked from the "assets" directory
   # Comment the lines if you don't want to use it
-  cover     = "img/cover.jpg"
-  coverAlt  = "A placeholder that doesn't deserve to be described."
+#  cover     = "img/cover.jpg"
+#  coverAlt  = "A placeholder that doesn't deserve to be described."
 
   # Shows a message in the footer about JavaScript being disabled
   # The default is false
-  hasNoscriptNotice = true
+  #hasNoscriptNotice = false
 
   # Default path for images in posts
   # ie.: "content/some-post/img"
