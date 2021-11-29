@@ -1,3 +1,3 @@
-[submodule "themes/color-your-world"]
-	path = themes/color-your-world
-	url = https://gitlab.com/rmaguiar/hugo-theme-color-your-world.git
+[submodule "themes/no-js"]
+	path = themes/no-js
+	url = git@github.com:stevenengler/no-js-hugo-theme.git
