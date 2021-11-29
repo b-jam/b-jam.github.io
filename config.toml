@@ -2,3 +2,102 @@ baseURL = 'https://wattie.dev/'
 languageCode = 'en-NZ'
 title = 'Jam'
 theme = "color-your-world"
+enableEmoji = true
+copyright = "Copyright ©2021-, Benjamin Wattie; All rights reserved."
+
+[params]
+  description = "Dev. Musician. Father"
+
+  # Author
+  author      = "John Doe"
+  authorDesc  = "Some indescribable horror."
+
+  # Footer text
+  # Each value will become a paragraph
+  # Keep it as an array
+  footerText = [ "Generated with [Hugo](https://gohugo.io) using the [Color Your World](https://gitlab.com/rmaguiar/hugo-theme-color-your-world) theme." ]
+
+  # Site cover, for Open Graph, Twitter Cards and Schema.org
+  # It will be used if the current page doesn't have an image cover
+  # File will be picked from the "assets" directory
+  # Comment the lines if you don't want to use it
+  cover     = "img/cover.jpg"
+  coverAlt  = "A placeholder that doesn't deserve to be described."
+
+  # Shows a message in the footer about JavaScript being disabled
+  # The default is false
+  hasNoscriptNotice = true
+
+  # Default path for images in posts
+  # ie.: "content/some-post/img"
+  # Can also be set PER PAGE
+  # It can be used to reduce repetition
+  # There's no default value
+  imgPath = "img"
+
+  # Default classes for markup image
+  # Modifies the default behavior of images placed via markdown
+  # Can also be set PER PAGE via front matter
+  # Available classes are: border and borderless
+  # There's no default value
+  markupImgClass = "borderless"
+
+  # This will append a separator (of your choice) along the site title to your <title>
+  # ie.: | ❚ - – — • ⚫
+  # You can disabled it PER PAGE by using "disableTitleSeparator" at front
+  # matter or disable it entirely by commenting the line below
+  titleSeparator = "|"
+
+  [params.search]
+
+    # Enable search form (at the post list)
+    # The default value is false
+    enable = true
+
+    # Limit search results
+    # The default value is 30
+    maxResults = 15
+
+    # Limit seach field input and pattern matching
+    minLength = 2   # Default is 3
+    maxLength = 42  # Default is 32
+
+    # Optional placeholder for search field
+    placeholder = "ie.: lorem ipsum"
+
+    # Stop word filter list
+    # Can also be set PER PAGE via front matter
+    # There's no default value
+    stopWords = [ "a", "an", "and", "in", "the", "to", "was", "were", "with" ]
+
+  [params.style]
+
+    # Disable the use of system settings (prefers-color-scheme)
+    # Can be used as a workaround for Chrome on Linux
+    # (Issue 998903: Dark Gtk theme does not affect prefers-color-scheme media query)
+    # The default is false
+    ignoreSystemSettings = true
+
+    # Use an icon or text for footnote return links
+    # The default is false
+    hasIconAsFootnoteReturnLink = true
+
+    # For the social shortcode
+    # Use flexbox (with flex-grow) or grid (equal width)
+    # The default is false
+    socialIsFlex = true
+
+    # Keep anchor links hidden until it's focused/hovered
+    # They will always be visible in mobile devices, regardless the option
+    # The default is false
+    hideAnchors = true
+
+    # CSS animation transition when changing colors
+    # The default is ".5s ease"
+    changeTransition = ".3s ease"
+
+
+
+    # darkAccent = ""
+    # lightAccent = "#FFF1BC"
+    # presets = ["#7dc383", "#699c78"]
