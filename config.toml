@@ -1,7 +1,7 @@
 baseURL = 'https://wattie.dev/'
 languageCode = 'en-NZ'
 title = 'Jam'
-theme = "color-your-world"
+theme = "no-js"
 enableEmoji = true
 copyright = "Copyright ©2021-, Benjamin Wattie; All rights reserved."
 
