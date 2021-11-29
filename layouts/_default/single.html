@@ -1,0 +1,31 @@
+{{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+  <div class="title-header">
+    <h1>{{ if .Draft }}<i>(Draft)</i> {{ end }}{{ .Title }}</h1>
+    <div class="title-header-date">
+      {{- if eq .Date.IsZero false }}
+        <time>{{ .Date.Format "Monday, January 2, 2006" }}</time>
+      {{- end }}
+      {{- if (and (eq .Lastmod.IsZero false) (ne .Lastmod .Date)) }}
+        &mdash; last updated <time>{{ .Lastmod.Format "January 2, 2006" }}</time>
+      {{- end }}
+    </div>
+  </div>
+  {{ if or (.Params.tableofcontents) (and (ne .Params.tableofcontents false) (isset .Site.Params "tableofcontentswordcount") (ge .Site.Params.TableOfContentsWordCount 0) (gt .WordCount .Site.Params.TableOfContentsWordCount)) }}
+    {{/* If the front matter parameter is true, show the toc */}}
+    {{/* Elif the front matter parameter is false, don't show the toc */}}
+    {{/* Elif the front matter parameter is not set, show the toc if the site parameter is set, non-negative, and less than the word count */}}
+    <div class="table-of-contents">
+      <details open="open">
+        <summary>
+          <span class="table-of-contents-title">Table of Contents</span>
+        </summary>
+        {{ $toc := .TableOfContents -}}
+        {{- $toc := replaceRE `<nav(.*)>(\s?)<ul>\s?<li>\s?<ul>` `<nav${1}>${2}<ul>` $toc -}}
+        {{- $toc := replaceRE `</ul>\s?</li>\s?</ul>(\s?)</nav>` `</ul>${1}</nav>` $toc -}}
+        {{- safeHTML $toc }}
+      </details>
+    </div>
+  {{ end }}
+  {{ .Content | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" (printf "${1}<a href=\"#${2}\" class=\"heading-anchor\" aria-label=\"Anchor\"><img src=\"%s\" class=\"color-adapting-image\" height=\"20\"></a>${3}" ("images/chain-link.svg" | relURL)) | safeHTML }}
+{{ end }}
