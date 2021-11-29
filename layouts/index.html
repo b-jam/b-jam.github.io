@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{ .Content }}
+    <h5>Most recent post</h5>
+    {{$posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse}}
+    {{ range first 1 $posts }}
+      <article class="all-list">
+        <div class="title-list">
+          <h3><a href="{{ .RelPermalink }}">{{ if .Draft }}<i>(Draft)</i> {{ end }}{{ .Title }}</a></h3>
+          <div class="title-list-date">
+            {{ if eq .Date.IsZero false }}
+              <time>{{ .Date.Format "Monday, January 2, 2006" }}</time>
+            {{ end }}
+            {{ if (and (eq .Lastmod.IsZero false) (ne .Lastmod .Date)) }}
+              (updated)
+            {{ end }}
+          </div>
+        </div>
+        <div class="body-list">
+          <p>
+            {{ .Summary }}
+          </p>
+        </div>
+      </article>
+    {{ end }}
+{{ end }}

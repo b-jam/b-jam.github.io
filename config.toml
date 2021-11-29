@@ -5,6 +5,18 @@ theme = "no-js"
 enableEmoji = true
 copyright = "Copyright ©2021-, Jam Wattie; All rights reserved."
 
+[server]
+[[server.headers]]
+  for = '/**.html'
+  [server.headers.values]
+    Cache-Control = 'public, max-age=86400'
+    Content-Security-Policy = 'script-src self'
+    Referrer-Policy = 'strict-origin'
+    X-Content-Type-Options = 'nosniff'
+    X-Frame-Options = 'DENY'
+    X-XSS-Protection = '1; mode=block'
+    Strict-Transport-Security = 'max-age=31536000; includeSubDomains; preload'
+
 [params]
   description = "Dev. Musician. Father"
 
@@ -47,57 +59,3 @@ copyright = "Copyright ©2021-, Jam Wattie; All rights reserved."
   # You can disabled it PER PAGE by using "disableTitleSeparator" at front
   # matter or disable it entirely by commenting the line below
   titleSeparator = "|"
-
-  [params.search]
-
-    # Enable search form (at the post list)
-    # The default value is false
-    enable = true
-
-    # Limit search results
-    # The default value is 30
-    maxResults = 15
-
-    # Limit seach field input and pattern matching
-    minLength = 2   # Default is 3
-    maxLength = 42  # Default is 32
-
-    # Optional placeholder for search field
-    placeholder = "ie.: lorem ipsum"
-
-    # Stop word filter list
-    # Can also be set PER PAGE via front matter
-    # There's no default value
-    stopWords = [ "a", "an", "and", "in", "the", "to", "was", "were", "with" ]
-
-  [params.style]
-
-    # Disable the use of system settings (prefers-color-scheme)
-    # Can be used as a workaround for Chrome on Linux
-    # (Issue 998903: Dark Gtk theme does not affect prefers-color-scheme media query)
-    # The default is false
-    ignoreSystemSettings = true
-
-    # Use an icon or text for footnote return links
-    # The default is false
-    hasIconAsFootnoteReturnLink = true
-
-    # For the social shortcode
-    # Use flexbox (with flex-grow) or grid (equal width)
-    # The default is false
-    socialIsFlex = true
-
-    # Keep anchor links hidden until it's focused/hovered
-    # They will always be visible in mobile devices, regardless the option
-    # The default is false
-    hideAnchors = true
-
-    # CSS animation transition when changing colors
-    # The default is ".5s ease"
-    changeTransition = ".3s ease"
-
-
-
-    # darkAccent = ""
-    # lightAccent = "#FFF1BC"
-    # presets = ["#7dc383", "#699c78"]

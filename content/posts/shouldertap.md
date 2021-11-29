@@ -12,7 +12,7 @@ I'm working a few projects at the moment, both at work and at home.
 I'll keep hush on the many work things. At home I'm working on a small game, using [bevy](https://github.com/bevyengine/bevy) in the rust language. 
 I'm trying to write some here. There is also fitness, music practice and house projects. However the most important thing in my life is supporting and spending time with my heavily pregnant partner. She will be bringing our beautiful daughter into the world.
 
-####I thoroughly enjoy having a lot of things going on, but time management and focus are becoming very important for me.
+#### I thoroughly enjoy having a lot of things going on, but time management and focus are becoming very important for me.
 
 Struggling with too many distractions is a new problem for me, and that's the reason for this post.
 When working in an office there is a widely understood rule that a shoulder tap is costly to a developers focus, so if you do you better have a good reason for not scheduling a meeting. People know that a shoulder tap has a tangible cost. Multiply that cost if that developer has headphones on and their fingers are flying at light speed with vim open.
