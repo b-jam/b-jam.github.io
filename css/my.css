@@ -1,3 +1,10 @@
 .header {
 	background-image: none;
 }
+body {
+	background-image: url(../favicon.ico);
+	font-size: 13pt;
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	margin: 0;
+}
