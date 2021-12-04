@@ -92,11 +92,8 @@ a:hover {
 }
 
 .highlight td.lntd:last-child {
-	/* needed until this bug is fixed: https://github.com/alecthomas/chroma/issues/225 */
 	width: 100%;
 }
-
-/* Improvements to inline code blocks */
 
 code {
 	font-size: 98%;
@@ -268,7 +265,7 @@ blockquote {
 	flex-direction: row;
 	flex-wrap: wrap;
 	overflow: hidden;
-	-webkit-overflow-scrolling: touch; /* this needs to go here for some reason */
+	-webkit-overflow-scrolling: touch;
 }
 
 .links li {

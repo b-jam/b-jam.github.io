@@ -1,5 +1,3 @@
-@import url("light-chroma.css");
-
 a {
 	color: #0000A0;
 }
@@ -35,7 +33,6 @@ blockquote {
 }
 
 .header {
-	background-image: url(../../images/header-bg-light.jpg);
 }
 
 .main {
