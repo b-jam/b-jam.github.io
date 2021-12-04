@@ -8,9 +8,6 @@
 	<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 	<link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
 	<link id="theme_css" rel="stylesheet" href="{{ "css/themes" | relURL }}/{{ .Site.Params.ThemeStyle | default $themeStyleDefault }}">
-{{- if .Site.Params.ThemeStyleSwitcher }}
-	<script src="{{ "js/theme-switcher.js" | relURL }}"></script>
-{{- end }}
 </head>
 <body>
 	<input class="show-hide-menu-input" style="display:none;" autocomplete="off" type="checkbox" id="toggle-1">
@@ -22,14 +19,6 @@
 				</div>
 				<div>
 					<div class="header-right">
-{{- if .Site.Params.ThemeStyleSwitcher }}
-						<div id="change-theme-button" style="display:none;" class="clickable-header-label" onclick="toggle_theme()">
-							<img class="color-adapting-image" width="30" src="" alt="change theme button">
-						</div>
-{{- end }}
-					    <label id="show-hide-menu-label" class="clickable-header-label" for="toggle-1">
-							<img class="color-adapting-image" width="30" src="{{ "images/hamburger.svg" | relURL }}" alt="menu button">
-						</label>
 					</div>
 					<label class="overlay" for="toggle-1"></label>
 {{- if .Site.Menus.main }}
@@ -55,5 +44,4 @@
 		No javascript, no worries. Source code on <a href="https://github.com/b-jam/b-jam.github.io">Github</a>
 	</div>
 </body>
-<link rel="stylesheet" href="/css/my.css">
 </html>

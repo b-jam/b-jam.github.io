@@ -1,10 +1,8 @@
 baseURL = 'https://wattie.dev/'
 languageCode = 'en-NZ'
 title = 'Jam'
-theme = "no-js"
 enableEmoji = true
 copyright = "Copyright ©2021-, Jam Wattie; All rights reserved."
-custom_css = ["css/my.css"]
 
 [server]
 [[server.headers]]
@@ -19,7 +17,7 @@ custom_css = ["css/my.css"]
     Strict-Transport-Security = 'max-age=31536000; includeSubDomains; preload'
 
 [params]
-  description = "Dev. Musician. Father"
+  description = "Jamjamjam"
 
   # Author
   author      = "Jam"
