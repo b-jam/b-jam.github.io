@@ -1,14 +1,16 @@
 a {
-	color: #0000A0;
+	color: #4a90e2;
 }
 
 .highlight > * {
-	border-color: #E0E0E0;
+	border-color: #e2e8f0;
+	background-color: #f8fafc;
 }
 
 :not(pre) > code {
 	/* inline code elements */
-	background-color: rgba(25, 25, 25, 0.05);
+	background-color: #f1f5f9;
+	border-color: #e2e8f0;
 }
 
 a > code {
@@ -16,23 +18,32 @@ a > code {
 }
 
 .section-list li > * {
-	background-color: rgba(25, 25, 25, 0.05);
+	background-color: #f1f5f9;
+	border-color: #e2e8f0;
 }
 
 .section-list li > a {
-	background-color: rgba(15, 15, 150, 0.05);
+	background-color: #f1f5f9;
+}
+
+.section-list li > a:hover {
+	background-color: #e2e8f0;
 }
 
 body {
-	background-color: rgb(247, 247, 247);
+	background-color: #f8f9fa;
+	background-image:
+		radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.03) 0%, transparent 50%),
+		radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.03) 0%, transparent 50%);
 }
 
 blockquote {
-	color: #404040;
-	border-left: 0.25em solid #CCC;
+	color: #4a5568;
+	border-left-color: #cbd5e0;
 }
 
 .header {
+	/* Gradient is defined in styles.css */
 }
 
 .main {
@@ -44,8 +55,8 @@ blockquote {
 }
 
 .table-of-contents {
-	border-color: #E0E0E0;
-	background-color: #FAFAFA;
+	border-color: #e2e8f0;
+	background-color: #f8fafc;
 }
 
 .notice {

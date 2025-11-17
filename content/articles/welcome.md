@@ -31,4 +31,4 @@ I explored Catalyst Cloud, a NZ hosting provider. They currently offer $300 cred
 However, their API is whitelisted, so I can't easily call it from a github actions pipeline. Not to mention my home IP uses CGNAT, and paying for a static IP defeats the purpose.
 Github pages is free, so thats where I'll be hosting this. I'll also use github actions to do the deploying.
 
-**Stay a while and listen.** 
+**Stay a while and listen.**

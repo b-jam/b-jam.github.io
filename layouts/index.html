@@ -1,9 +1,9 @@
 {{ define "main" }}
   {{ .Content }}
-    <h5>Most recent article</h5>
+    <h2 class="articles-heading">Articles</h2>
     {{$articles := ($.Site.GetPage "section" "articles").Pages.ByPublishDate.Reverse}}
     {{ range first 1 $articles }}
-      <article class="all-list">
+      <article class="all-list article-featured">
         <div class="title-list">
           <h3><a href="{{ .RelPermalink }}">{{ if .Draft }}<i>(Draft)</i> {{ end }}{{ .Title }}</a></h3>
           <div class="title-list-date">
@@ -22,7 +22,23 @@
         </div>
       </article>
     {{ end }}
+    {{ $remainingArticles := after 1 $articles }}
+    {{ range first 2 $remainingArticles }}
+      <article class="all-list article-secondary">
+        <div class="title-list">
+          <h4><a href="{{ .RelPermalink }}">{{ if .Draft }}<i>(Draft)</i> {{ end }}{{ .Title }}</a></h4>
+          <div class="title-list-date">
+            {{ if eq .Date.IsZero false }}
+              <time>{{ .Date.Format "Monday, January 2, 2006" }}</time>
+            {{ end }}
+            {{ if (and (eq .Lastmod.IsZero false) (ne .Lastmod .Date)) }}
+              (updated)
+            {{ end }}
+          </div>
+        </div>
+      </article>
+    {{ end }}
     {{ range first 2 ( where .Pages "Section" "articles" ) }}
-      <h4><a href="{{ .RelPermalink }}">All articles.</a></h4>
+      <p class="all-articles-link"><a href="{{ .RelPermalink }}">All articles.</a></p>
     {{ end}}
 {{ end }}

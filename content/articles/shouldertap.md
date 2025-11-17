@@ -9,7 +9,7 @@ draft: false
 ### I've more than doubled my productivity recently, without giving anything up.
 
 I'm working a few projects at the moment, both at work and at home.
-I'll keep hush on the many work things. At home I'm working on a small game, using [bevy](https://github.com/bevyengine/bevy) in the rust language. 
+I'll keep hush on the many work things. At home I'm working on a small game, using [bevy](https://github.com/bevyengine/bevy) in the rust language.
 I'm trying to write some here. There is also fitness, music practice and house projects. However the most important thing in my life is supporting and spending time with my heavily pregnant partner. She will be bringing our beautiful daughter into the world.
 
 #### I thoroughly enjoy having a lot of things going on, but time management and focus are becoming very important for me.
@@ -31,7 +31,7 @@ I've gotten rid of all push-based shoulder taps. I choose when I get shoulder ta
 <sub><sup>Okay except for phone calls. Though I have my number on a do-not-call list for marketers. </sup></sub>
 
 The other important piece is planning my time. I start every day by setting goals for the day, roughly allocating time for each goal, checking if its all achievable, and strategically inserting blocks in between goals for communication, walks, eating.
-Tricking my gorilla brain essentially. Me finish task, me banana. 
+Tricking my gorilla brain essentially. Me finish task, me banana.
 
 #### The results of this have been incredible. I finish the things I start much more often. I write code for longer periods. And I'm more reachable, not less!
 The time I devote to checking my various channels is much more relaxing because there is no opportunity cost. And I often have extra time to be more proactive with communicating with other people. Reaching out, giving updates, setting up catchups.

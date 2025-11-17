@@ -1,16 +1,17 @@
 ---
-title: "Jam"
+title: "Benjamin Wattie"
 date: 2021-11-01T18:02:42+13:00
 draft: false
 ---
-**Code. Music. Gin**
+**Hello from Wellington, New Zealand  🐑 ⛵ 🇳🇿**
 
-I'm a developer, musician, amateur chef and father from New Zealand.
+I solve software and infrastructure problems at large scale.
 
-I help people make things that involve bits and pixels.
+...Let me at it.
 
-[Twitter](https://twitter.com/bjamjamjam)
+When I'm not being paid, I'm working on a blazing fast [database in rust](https://github.com/b-jam/rbolt).
 
-[Email me](mailto:hello@wattie.dev)
+My Signing Key is `SHA256:LoZT3ql4UEDblTCqk0I3C5ozIz0rjppfUKiTcIhhT/w`
 
-GPG: 5615 8E21 5681 1910 2147 218A A8AF FE1A 757C 2308
+[GitHub](https://github.com/b-jam) · [Signal](https://signal.me/#p/bjam.01) · [Email](mailto:hello@wattie.dev)
+

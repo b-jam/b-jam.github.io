@@ -1,5 +1,5 @@
 ---
-title: "Rust Game Development"
+title: "Bevy Game Development"
 date: 2022-01-08T12:26:04+13:00
 draft: false
 ---
