@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Articles on Benjamin Wattie</title><link>https://wattie.dev/articles/</link><description>Recent content in Articles on Benjamin Wattie</description><generator>Hugo</generator><language>en-NZ</language><copyright>Copyright ©2021-, Jam Wattie; All rights reserved.</copyright><lastBuildDate>Mon, 27 Oct 2025 14:48:14 +1300</lastBuildDate><atom:link href="https://wattie.dev/articles/index.xml" rel="self" type="application/rss+xml"/><item><title>Copy on Write</title><link>https://wattie.dev/articles/copyonwrite/</link><pubDate>Mon, 27 Oct 2025 14:48:14 +1300</pubDate><guid>https://wattie.dev/articles/copyonwrite/</guid><description>&lt;hr&gt;
+&lt;p&gt;When I first encountered ZFS it felt like black magic with its instant snapshots AND self healing checksums. I was told it&amp;rsquo;s all thanks to &lt;strong&gt;Copy-on-Write (CoW)&lt;/strong&gt;. Years later, I&amp;rsquo;m writing this post to explain this strategy, as it&amp;rsquo;s one of my favorite optimisation techniques. By the end, you&amp;rsquo;ll see how CoW is more than just a trick; it&amp;rsquo;s the fundamental design choice that solves some of the trickiest problems in performance, concurrency, memory usage, and data integrity, all while keeping things blazing fast.&lt;/p&gt;</description></item><item><title>Bevy Game Development</title><link>https://wattie.dev/articles/rustgamedev/</link><pubDate>Sat, 08 Jan 2022 12:26:04 +1300</pubDate><guid>https://wattie.dev/articles/rustgamedev/</guid><description>&lt;h2 id="last-year-i-started-creating-a-fairly-large-game-in-rust"&gt;Last year I started creating a fairly large game in Rust.&lt;/h2&gt;
+&lt;p&gt;My background is in mostly python devops and so nearly every part of it needs careful planning.
+The parts that weren&amp;rsquo;t nearly all needed rewriting.
+I&amp;rsquo;m learning common game dev patterns as well as nuances in Rust and I want to document it.
+It&amp;rsquo;s not open source at the moment.&lt;/p&gt;
+&lt;h3 id="why-rust"&gt;Why Rust?&lt;/h3&gt;
+&lt;p&gt;One word, Elegance.
+There is no garbage collection in Rust, but you can still work with the heap in a safe way. Concurrency becomes much more deterministic as a result of the move/borrow rules.
+This concurrency allows breakneck speeds in many different use cases. I also find the syntax very satisfying.&lt;/p&gt;</description></item><item><title>The cost of a shouldertap</title><link>https://wattie.dev/articles/shouldertap/</link><pubDate>Mon, 29 Nov 2021 21:25:47 +1300</pubDate><guid>https://wattie.dev/articles/shouldertap/</guid><description>&lt;hr&gt;
+&lt;h3 id="ive-more-than-doubled-my-productivity-recently-without-giving-anything-up"&gt;I&amp;rsquo;ve more than doubled my productivity recently, without giving anything up.&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;m working a few projects at the moment, both at work and at home.
+I&amp;rsquo;ll keep hush on the many work things. At home I&amp;rsquo;m working on a small game, using &lt;a href="https://github.com/bevyengine/bevy"&gt;bevy&lt;/a&gt; in the rust language.
+I&amp;rsquo;m trying to write some here. There is also fitness, music practice and house projects. However the most important thing in my life is supporting and spending time with my heavily pregnant partner. She will be bringing our beautiful daughter into the world.&lt;/p&gt;</description></item><item><title>A colophon for wattie.dev</title><link>https://wattie.dev/articles/welcome/</link><pubDate>Fri, 12 Nov 2021 20:33:47 +1300</pubDate><guid>https://wattie.dev/articles/welcome/</guid><description>&lt;hr&gt;
+&lt;h3 id="the-colophon-is-a-fancy-way-of-saying-this-is-who-i-am-and-this-is-what-im-publishing-on"&gt;The colophon is a fancy way of saying, this is who I am and this is what I&amp;rsquo;m publishing on.&lt;/h3&gt;
+&lt;p&gt;I wanted to write some stuff. And I want to do it easily.
+So naturally, I needed a blog. But I&amp;rsquo;m quite picky&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;m keen to keep it free. If I have to pay even a tiny amount, then its likely per GB or request. That means I should probably have a CDN in front. The only free CDN I know of is cloudflare. That means giving them my DNS. My DNS hosts other things. I&amp;rsquo;m also just cheap&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;d like to minimize javascript. The more I have to write, the less likely any of my words see a single GET.&lt;/li&gt;
+&lt;li&gt;I need automated deployments.&lt;/li&gt;
+&lt;li&gt;I want to minimize ads.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This leaves me with a static site. Static sites are great. The threat window is much smaller than traditional websites.
+There is no database to maintain and it&amp;rsquo;s very simple to add a CDN in front, making them very fast and scalable.&lt;/p&gt;</description></item></channel></rss>
