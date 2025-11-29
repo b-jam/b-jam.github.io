@@ -9,5 +9,5 @@ I solve software and infrastructure problems at large scale.
 
 My Signing Key is `SHA256:LoZT3ql4UEDblTCqk0I3C5ozIz0rjppfUKiTcIhhT/w`
 
-[GitHub](https://github.com/b-jam) · [Signal](https://signal.me/#p/bjam.01) · [Email](mailto:hello@wattie.dev)
+[GitHub](https://github.com/b-jam) · [Signal](https://signal.me/#eu/8B8bWoEFlbvKF2YqVSHhT36u0WErW9BIPEPdtWJcoINuv56R9l9AIILUCgtWGiyF) · [Email](mailto:hello@wattie.dev)
 
