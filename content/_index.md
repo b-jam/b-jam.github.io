@@ -7,10 +7,6 @@ draft: false
 
 I solve software and infrastructure problems at large scale.
 
-...Let me at it.
-
-When I'm not being paid, I'm working on a blazing fast [database in rust](https://github.com/b-jam/rbolt).
-
 My Signing Key is `SHA256:LoZT3ql4UEDblTCqk0I3C5ozIz0rjppfUKiTcIhhT/w`
 
 [GitHub](https://github.com/b-jam) · [Signal](https://signal.me/#p/bjam.01) · [Email](mailto:hello@wattie.dev)

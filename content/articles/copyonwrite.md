@@ -1,13 +1,11 @@
 ---
-title: "Copy on Write is laziness but with wheels"
+title: "Copy on Write"
 date: 2025-10-27T14:48:14+13:00
 draft: false
 tags: ["storage", "optimisation", "filesystem", "concurrency", "copy on write"]
 ---
 
 ---
-## Copy on Write
-
 When I first encountered ZFS it felt like black magic with its instant snapshots AND self healing checksums. I was told it's all thanks to **Copy-on-Write (CoW)**. Years later, I'm writing this post to explain this strategy, as it's one of my favorite optimisation techniques. By the end, you'll see how CoW is more than just a trick; it's the fundamental design choice that solves some of the trickiest problems in performance, concurrency, memory usage, and data integrity, all while keeping things blazing fast.
 
 <!--more-->
