@@ -1,0 +1,752 @@
+h1 {
+	font-size: 1.75em;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #1a1a1a;
+}
+h2 {
+	font-size: 1.50em;
+	font-weight: 600;
+	line-height: 1.3;
+	color: #2a2a2a;
+}
+h3 {
+	font-size: 1.30em;
+	font-weight: 600;
+	line-height: 1.3;
+	color: #2a2a2a;
+}
+h4 {
+	font-size: 1.15em;
+	font-weight: 600;
+}
+h5 {
+	font-size: 1.00em;
+	font-weight: 600;
+}
+h6 {
+	font-size: 0.90em;
+	font-weight: 600;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.2s ease;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	color: #4a90e2;
+}
+
+.title-list h3 a, .title-list h4 a, .all-articles-link a {
+	color: #4a90e2;
+	text-decoration: none;
+}
+
+.title-list h3 a:hover, .title-list h4 a:hover, .all-articles-link a:hover {
+	color: #357abd;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 1.8em;
+	margin-bottom: 0.8em;
+}
+
+.articles-heading {
+	font-size: 1.3em;
+	font-weight: 500;
+	margin-top: 2.5em;
+	margin-bottom: 1.2em;
+	color: #4a5568;
+	border-bottom: 1px solid #e2e8f0;
+	padding-bottom: 0.3em;
+}
+
+@media (hover: hover) {
+	/* For devices which support hover, hide the heading URL fragment
+	   link/icon until the mouse hovers over the heading */
+
+	h1:hover .heading-anchor,
+	h2:hover .heading-anchor,
+	h3:hover .heading-anchor,
+	h4:hover .heading-anchor,
+	h5:hover .heading-anchor,
+	h6:hover .heading-anchor {
+		visibility: visible;
+	}
+
+	h1 .heading-anchor,
+	h2 .heading-anchor,
+	h3 .heading-anchor,
+	h4 .heading-anchor,
+	h5 .heading-anchor,
+	h6 .heading-anchor {
+		visibility: hidden;
+	}
+}
+
+.heading-anchor {
+	color: grey;
+	margin-left: 0.5em;
+	font-size: 0.75em;
+}
+
+.heading-anchor:hover {
+	text-decoration: none;
+}
+
+.heading-anchor img {
+	height: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #4a90e2;
+	transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+a:hover {
+	color: #357abd;
+	text-decoration: underline;
+}
+
+.dont-show {
+	display: none;
+}
+
+/* Improvements to Hugo Chroma syntax highlighting */
+
+.highlight {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	/* set the tab size for browsers that support it */
+	tab-size: 4;
+	-moz-tab-size: 4;
+	/* needed for the iPhone so that the two columns (line numbers and code) don't have different font sizes */
+	-webkit-text-size-adjust: 100%;
+	border-radius: 6px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.highlight > * {
+	padding: 1em;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.highlight pre {
+	margin: 0px;
+	overflow-x: auto;
+	word-wrap: normal;
+}
+
+.highlight td.lntd pre {
+	/* needed to fix an iPhone scrolling bug */
+	overflow-x: hidden;
+}
+
+.highlight td.lntd:last-child {
+	width: 100%;
+}
+
+code {
+	font-size: 98%;
+}
+
+:not(pre) > code {
+	/* inline code elements */
+	background-color: #f1f5f9;
+	border: 1px solid #e2e8f0;
+	border-radius: 4px;
+	font-size: 85%;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	color: #e83e8c;
+	font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+/* Formatting for "notice" shortcodes */
+
+.notice {
+	margin: 1.5em 0;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #E9E9E9;
+}
+
+@media only screen and (max-width: 500pt) {
+	.notice {
+		width: 100%;
+	}
+}
+
+.notice > hr {
+	display: none; /* only want the child hr elements to appear if css is disabled */
+}
+
+.notice .notice-title {
+	margin: 0;
+	padding: 0.4em;
+	line-height: 1em;
+	background-color: #D5D5D5;
+}
+
+.notice .notice-title span {
+	vertical-align: -10%; /* we don't want the font descender space to be centered as well */
+}
+
+.notice .notice-title .notice-title-icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.15em;
+	margin-right: 0.25em;
+	height: 0.85em;
+}
+
+.notice .notice-body {
+	padding: 0.6em;
+}
+
+.notice .notice-body p:first-child {
+	margin-top: 0;
+}
+
+.notice .notice-body p {
+	margin: 0.8em 0;
+}
+
+/* ************************ */
+
+blockquote {
+	color: #4a5568;
+	border-left: 0.25em solid #cbd5e0;
+	padding-left: 1em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	font-style: italic;
+	background-color: #f7fafc;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-radius: 0 4px 4px 0;
+}
+
+.title-header {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding-bottom: 1.5em;
+	border-bottom: 2px solid #e8e8e8;
+}
+
+.title-header > h1{
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+.title-header-date {
+	color: #6b7280;
+	font-size: 90%;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+}
+
+.title-list > h2, .title-list > h3, .title-list > h4, .title-list > h5, .title-list > h6{
+	margin-bottom: 0.3em;
+}
+
+.article-featured .title-list h3 {
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+.body-list p {
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+	line-height: 1.7;
+}
+
+.title-list-date {
+	color: #6b7280;
+	font-size: 85%;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+}
+
+.all-list {
+	margin-bottom: 2.5em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.all-list:last-child {
+	border-bottom: none;
+}
+
+.article-secondary {
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.article-secondary .title-list h4 {
+	font-size: 1.1em;
+	font-weight: 500;
+	margin-bottom: 0.2em;
+}
+
+.article-secondary .title-list-date {
+	font-size: 80%;
+}
+
+.all-articles-link {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.table-of-contents {
+	border-width: 1px;
+	border-style: solid;
+	padding: 1.5em;
+	margin-bottom: 2.5em;
+	font-size: 0.9em;
+	border-radius: 6px;
+}
+
+.table-of-contents nav > ul {
+	/* only the most-parent ul element */
+	margin-bottom: 0;
+}
+
+.table-of-contents ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.table-of-contents li {
+	margin-top: 0.8em;
+}
+
+.table-of-contents ul ul {
+	list-style: none;
+	padding-left: 1.5em;
+}
+
+.table-of-contents-title {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.section-list {
+	padding-left: 0;
+}
+
+.section-list li {
+	display: inline-block;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.section-list li:last-child {
+	margin-right: 0em;
+}
+
+.section-list li > * {
+	background-color: #f1f5f9;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+	font-size: 90%;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	transition: all 0.2s ease;
+}
+
+.section-list li > a:hover {
+	background-color: #e2e8f0;
+	text-decoration: none;
+}
+
+.links {
+	font-size: 120%;
+	list-style-type: none;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	margin-top: 9pt;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.links li {
+	margin-right: 1em;
+}
+
+.links li > * {
+	display:inline-block;
+}
+
+.links li:last-child {
+	margin-right: 0;
+}
+
+.links a {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.2s ease;
+}
+
+.links a:hover {
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: underline;
+}
+
+.overlay {
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 2;
+}
+
+.header-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+}
+
+.header-right * {
+	margin-left: 1em;
+}
+
+.header-right *:first-child {
+	margin-left: 0;
+}
+
+.clickable-header-label {
+	cursor: pointer;
+}
+
+.clickable-header-label * {
+	height: 1em;
+	width: auto; /* to override the <img width="__"> attribute when css is supported */
+}
+
+#show-hide-menu-label {
+	display: none;
+}
+
+body {
+	font-size: 13pt;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Lato, Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	color: #2c3e50;
+	letter-spacing: 0.01em;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 150%;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+}
+
+.title a {
+	text-decoration: none;
+	color: inherit;
+	transition: opacity 0.2s ease;
+}
+
+.title a:hover {
+	opacity: 0.8;
+}
+
+.header {
+	background: linear-gradient(135deg, #667eea 0%, #6f7ee0 20%, #7878d6 40%, #8272cc 60%, #8c6cc2 80%, #f5576c 100%);
+	background-size: 100%;
+	background-position: bottom;
+	display: inline-block;
+	z-index: 1; /* this prevents images with css filters from appearing above the header when in portrait mode */
+	width: 100%;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+	margin: 15pt;
+	position: relative; /* so that "position:absolute" works for the menu label */
+}
+
+.header .title {
+	color: white;
+}
+
+.body {
+	display: inline-block;
+	width: 100%;
+}
+
+.body-content {
+	margin: 15pt;
+	word-wrap: break-word;
+	max-width: 65ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Image/Figure formatting */
+
+.body-content :not(figure) img {
+	/* regular image elements should be inline elements */
+	max-width: 100%;
+	max-height: 60vw; /* if the image is really tall, we don't want the width to be 100% */
+}
+
+.body-content figure {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70%;
+}
+
+.body-content figure img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.5em;
+	max-width: 100%;
+	max-height: 40vw; /* if the image is really tall, we don't want the width to be 70% */
+}
+
+.body-content figure:not(.color-adapting-image) img {
+	/* if the image is designed to adapt to the theme, then don't use a background */
+	background-color: rgb(255, 255, 255); /* images with transparent backgrounds typically assume a light background */
+}
+
+.body-content figure figcaption {
+	font-size: 90%;
+	line-height: 1.5em;
+	padding-bottom: 0.3em;
+	border-bottom: 2px solid lightgray;
+}
+
+.body-content figure figcaption * {
+	margin: 0;
+}
+
+@media only screen and (orientation: portrait) {
+	.body-content :not(figure) img,
+	.body-content figure img {
+		/* need to target both so that they're more specific */
+		max-height: 100vw;
+	}
+}
+
+@media only screen and (max-width: 400pt) {
+	.body-content figure {
+		max-width: 100%;
+	}
+
+	.body-content figure figcaption {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+/* ************************ */
+
+.main {
+	width: 700pt; /* make sure to also change this in the media query */
+	margin: 0 auto;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+	box-sizing: border-box;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.footer {
+	text-align: center;
+	font-size: 85%;
+	padding: 2em 1em;
+	margin-top: 3em;
+	line-height: 1.6;
+}
+
+small {
+	font-size: 85%;
+	color: #6b7280;
+	display: block;
+	margin-top: 1em;
+}
+
+small code {
+	font-size: 90%;
+}
+
+
+@media only screen and (orientation: portrait) {
+	.header {
+		top: 0;
+		position: sticky;
+		position: -webkit-sticky; /* needed for iOS */
+		box-shadow: 0 0 1em rgba(30, 30, 30, .3);
+	}
+
+	.body-content :target::before {
+		/* When linking to tags with 'id's (example:
+		   'website.com/post/#heading'), make them
+		   appear lower down the page so that they
+		   don't appear under the sticky header set
+		   above.
+		   See: https://stackoverflow.com/a/24298427
+		   Note that this causes the cursor text
+		   selection of the target to behave
+		   undesirably.
+		*/
+		content: '';
+		display: block;
+		height: 3em;
+		margin-top: -3em;
+		visibility: hidden;
+		pointer-events: none;
+	}
+}
+
+
+@media only screen and (max-width: 700pt) {
+	.main {
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	body {
+		font-size: 12pt;
+		background-color: white;
+	}
+}
+
+@media only screen and (max-width: 400pt) {
+	.header-right {
+		height: 100%;
+		align-items: center;
+	}
+
+	.clickable-header-label {
+		display: inline-flex;
+	}
+
+	.clickable-header-label * {
+		vertical-align: middle;
+	}
+
+	#show-hide-menu-label {
+		display: inherit;
+	}
+
+	.show-hide-menu-input:checked ~ .main .links {
+		visibility: visible;
+		opacity: 1;
+		right: 0;
+		transition: all 0.3s;
+	}
+
+	.show-hide-menu-input:checked ~ .main .overlay {
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 0.3s;
+	}
+
+	.links {
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		overflow-y: scroll;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: -100px; /* start to the right for the transition */
+		min-width: 75%;
+		z-index: 3;
+		background-color: rgb(247, 247, 247);
+		padding: 10pt;
+		margin: 0;
+	}
+
+	.links li {
+		margin-right: 0;
+		border-bottom: solid 1px gray;
+	}
+
+	.links li > * {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 13px;
+	}
+
+	.links li:first-child {
+		border-top: solid 1px gray;
+		margin-top: 0px;
+	}
+
+	.header-content {
+		margin: 8pt 10pt;
+	}
+
+	.body-content {
+		margin: 10pt;
+	}
+
+	.title a {
+		vertical-align: -10%; /* we don't want the font descender space to be centered as well */
+	}
+}
+
+@media print {
+	body {
+		background-color: initial !important;
+	}
+
+	.main {
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 100%;
+		box-shadow: none !important;
+	}
+
+	.header {
+		background-color: initial !important;
+		background-image: none !important;
+	}
+
+	.header-content {
+		margin: 0;
+	}
+
+	.body-content {
+		margin: 0;
+	}
+
+	.header-right {
+		display: none;
+	}
+
+	.links {
+		display: none;
+	}
+}
