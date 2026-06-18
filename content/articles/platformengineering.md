@@ -11,17 +11,14 @@ The best time to define DevOps was 2015. The second best time is now that we can
 
 ### My first job.
 
-For the first 3 years of my career. I was the sole developer and sysadmin of a single server, which ran postgres, redis, 15 django websites, celery worker, a queue, and various cron jobs.
+For the first 3 years of my career I was the god sysadmin. I built 15 django websites and was the sole owner of a single server, which ran all of these alongside nginx, postgres, redis, uwsgi, celery worker, a queue, and various cron jobs.
 
-This was ops. I was the system administrator who had god mode access to everything, said no a lot, but if prod was down, I got a call.
+This was ops. I was the system administrator who had god mode access to everything, said no a lot, but if prod was down, I got a call. It was broken, I would fix it. I’d do some feature work before it broke again, and then I’d fix it again. My job security was being the person who knew everything.
 
-If the server was broken, I would fix it. I'd do some feature work in between, but my job security was being the guy who knew everything.
+This gave me the ability to drive manual if I ever need to, which is an important skill.. sometimes. But Kelsey Hightower said it best when he said that ops leads to 20 years of 1 year experience, and you are just getting better at broken processes.
 
-This experience gives me the ability to "drive manual" if I ever need to, which is a very important skill.
+I reached a ceiling and moved into a DevOps role.
 
-But Kelsey Hightower said it best when he said that this pattern can easily lead to 20 years of 1 year experience, where you just get incredibly good at broken processes.
-
-I reached a cap, and moved into a DevOps role.
 
 ### My first devops job.
 So devops was like, the attempt to define these broken processes as something tangible and versioned.
@@ -41,7 +38,7 @@ And I did that too. Each team did that. Every engineering team reached for the s
 
 The knowledge scaled within teams, but not across them.
 
-### Platform Engineering.
+### Platform engineering
 
 Platform engineering is about asking: can we, as a company, do that devops thing but just once?
 
