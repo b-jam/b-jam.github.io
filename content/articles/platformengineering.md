@@ -1,7 +1,7 @@
 ---
 title: "Now that we no longer need devops we can agree on what it means."
 date: 2026-06-18T00:00:00+12:00
-draft: true
+draft: false
 tags: ["platform engineering", "devops", "developer experience", "infrastructure", "internal developer platform"]
 ---
 
