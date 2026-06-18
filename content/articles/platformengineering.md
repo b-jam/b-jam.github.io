@@ -13,7 +13,7 @@ The best time to define DevOps was 2015. The second best time is now that we can
 
 For the first 3 years of my career. I was the sole developer and sysadmin of a single server, which ran postgres, redis, 15 django websites, celery worker, a queue, and various cron jobs.
 
-This was ops. Ops was the system administrator who had god mode access to everything, said no a lot, but if prod was down, you needed them on the task.
+This was ops. I was the system administrator who had god mode access to everything, said no a lot, but if prod was down, I got a call.
 
 If the server was broken, I would fix it. I'd do some feature work in between, but my job security was being the guy who knew everything.
 
