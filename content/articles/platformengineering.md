@@ -44,6 +44,8 @@ Platform engineering is about building a better API with those tools underneath.
 If I were onboarding your application onto my platform, I'd ask you: wheres your container, what version, what CPU and memory, and what are your scaling requirements? Is that all I'd ask? Yeah, probably.
 So that's all platform engineering should expose - an API to leverage your DevOps improvements across an entire company, rather than having each team reinvent it.
 
+Behind that, you can run kubernetes and all your infra. But your dev teams will love it because they don't have to care about any of it.
+
 ### When Does This Make Sense?
 Just a closing note - if you're not seeing the issue with devops unfold yet, your company isn't large enough to care about platform engineering yet, so focus on getting to that size first.
 
