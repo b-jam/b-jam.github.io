@@ -1,5 +1,5 @@
 ---
-title: "Benjamin Wattie"
+title: "wattie.dev"
 date: 2021-11-01T18:02:42+13:00
 draft: false
 ---

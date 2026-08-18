@@ -1,8 +1,8 @@
 baseURL = 'https://wattie.dev/'
 languageCode = 'en-NZ'
-title = 'Benjamin Wattie'
+title = 'wattie.dev'
 enableEmoji = true
-copyright = "Copyright ©2021-, Jam Wattie; All rights reserved."
+copyright = "Copyright ©2021-, wattie; All rights reserved."
 
 [server]
 [[server.headers]]
@@ -17,11 +17,11 @@ copyright = "Copyright ©2021-, Jam Wattie; All rights reserved."
     Strict-Transport-Security = 'max-age=31536000; includeSubDomains; preload'
 
 [params]
-  description = "Jamjamjam"
+  description = "wattie.dev"
 
   # Author
-  author      = "Jam"
-  authorDesc  = "Jamjamjam"
+  author      = "wattie"
+  authorDesc  = "wattie.dev"
   imgPath = "img"
 
   markupImgClass = "borderless"
